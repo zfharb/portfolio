@@ -17,8 +17,9 @@ class Signin extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-
-    this.props.singin(this.state.username, this.state.password);
+    console.log("I'm here");
+    signin(this.state.username, this.state.password);
+    console.log("Now I'm here");
   }
 
   render() {
@@ -51,9 +52,15 @@ class Signin extends Component {
   }
 }
 
-function mapDispatchToProps(dispatch) {
-  return bindActionCreators({signin}, dispatch)
+function mapStateToProps(state) {
+  return {x: state.counterReducer};
 }
+
+function mapDispatchToProps(dispatch) {
+  return { actions: bindActionCreators(signin, dispatch) }
+}
+
+
 
 export default connect(mapDispatchToProps)(Signin);
 

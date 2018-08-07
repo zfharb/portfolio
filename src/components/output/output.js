@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux'
+import {bindActionCreators} from 'redux'
+
 import './output.css'
 
 class Output extends Component {
@@ -11,12 +14,18 @@ class Output extends Component {
 
   render() {
     return (
-      <div/>
 
-
-        
+		<div className="rectangle">
+		{this.props.output}
+		</div>        
+    
     );
   }
 }
 
-export default Output;
+
+function mapStateToProps(state) {
+  return {output: state.counterReducer};
+}
+
+export default connect(mapStateToProps)(Output);
