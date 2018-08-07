@@ -1,8 +1,7 @@
 import React from 'react';
 
-import RemoveCounter from '../containers/RemoveCounter';
-import Signin from './signin/signin';
-import Output from './output/output';
+import Signin from '../containers/signin/signin';
+import Output from '../containers/output/output';
 
 import './App.css'
 

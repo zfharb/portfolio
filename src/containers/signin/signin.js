@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 
 import './signin.css';
-import { signin } from '../../actions';
+import { signin } from '../../actions/index';
 
 
 class Signin extends Component {
@@ -17,9 +17,9 @@ class Signin extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    console.log("I'm here");
-    signin(this.state.username, this.state.password);
-    console.log("Now I'm here");
+    console.log("I'm in handle submit");
+    this.props.signin(this.state.username, this.state.password);
+    console.log("I'm out handle submit");
   }
 
   render() {
@@ -52,17 +52,17 @@ class Signin extends Component {
   }
 }
 
-function mapStateToProps(state) {
-  return {x: state.counterReducer};
-}
 
 function mapDispatchToProps(dispatch) {
-  return { actions: bindActionCreators(signin, dispatch) }
+
+  return bindActionCreators({signin: signin}, dispatch) 
+  
 }
 
 
 
-export default connect(mapDispatchToProps)(Signin);
+
+export default connect(null,mapDispatchToProps)(Signin);
 
 
 

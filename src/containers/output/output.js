@@ -5,18 +5,20 @@ import {bindActionCreators} from 'redux'
 import './output.css'
 
 class Output extends Component {
-  constructor(props) {
-    super(props);
-    
-    this.state = {result :''};
+
+  renderElements(data) {
+    return (
+        <p key={data.id}>{data.title}</p>
+      );
 
   }
-
+  
   render() {
     return (
 
 		<div className="rectangle">
-		{this.props.output}
+
+    {this.props.output.map(this.renderElements)}
 		</div>        
     
     );
@@ -25,7 +27,7 @@ class Output extends Component {
 
 
 function mapStateToProps(state) {
-  return {output: state.counterReducer};
+  return {output: state.output};
 }
 
-export default connect(mapStateToProps)(Output);
+export default connect(mapStateToProps,null)(Output);

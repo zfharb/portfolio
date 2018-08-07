@@ -6,9 +6,7 @@ import counterApp from './reducers';
 import {createStore, applyMiddleware} from 'redux';
 import ReduxPromise from 'redux-promise';
 
-// const store = createStore(
-// 		counterApp,
-// );
+// const store = createStore(counterApp);
 
 const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
 

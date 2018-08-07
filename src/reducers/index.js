@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
-import counterReducer from './counterReducer';
+import outputReducer from './outputReducer';
 
 
 const counterApp = combineReducers({
-  counterReducer
+  output: outputReducer
 })
 
 export default counterApp
