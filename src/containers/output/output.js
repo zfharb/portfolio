@@ -6,19 +6,19 @@ import './output.css'
 
 class Output extends Component {
 
-  renderElements(data) {
-    return (
-        <p key='1'>{data}</p>
-      );
+  // renderElements(data) {
+  //   return (
+  //       <p key='1'>{data.detail}</p>
 
-  }
+  //     );
+
+  // }
   
   render() {
     return (
 
 		<div className="rectangle">
-
-    {this.props.output.map(this.renderElements)}
+hello
 		</div>        
     
     );
