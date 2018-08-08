@@ -8,7 +8,7 @@ class Output extends Component {
 
   renderElements(data) {
     return (
-        <p key={data.id}>{data.title}</p>
+        <p key='1'>{data}</p>
       );
 
   }
