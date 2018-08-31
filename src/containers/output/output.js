@@ -26,10 +26,12 @@ class Output extends Component {
   render() {
     return (
 		<div className="rectangle">
+
 			<h2>Pulse Events</h2>
 			<Pulse name="Door Lock" date = {new Date()}/>
 			<Pulse name="Motion Zone" date = {new Date()}/>
 		</div>
+
     );
   }
 }

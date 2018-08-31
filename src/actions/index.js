@@ -22,22 +22,29 @@ export const signin  = (userName, password) => {
 	// var basicAuth = 'Basic ' + btoa(userName + ':' + password);
 
     // const request = 
-
+    var x;
     axios.post(url, {}, {headers}).then(res => {
 
-
-    	console.log(res.data.detail);
+    	x = res.data.detail;
+    	console.log(x);
 
         const event_url = 'https://api-test2.adtpulse.com/ng/rest/adt/ui/operations?method=POST&action=/rest/adt/ui/client/history/getEvents';
   	    var event_headers = {
   				'Content-Type': 'application/x-www-form-urlencoded',
-				'X-Token': res.data.detail
+				  'X-Token': res.data.detail,
+         'X-Appkey': 'XahAvedeZeJmeLeTeDEburyubAqUnu6uXe',
+           'X-Appversion': 'Pulse/7.6.0',
+           'X-Clienttype': 'CUSTOM_ANDROID',
+           'X-Format': 'json',
+           'X-Locale': 'en_us',
+           'X-Login': 'automationadt@mailinator.com',
+           'X-Version': '4.4'
         }
   			    		console.log("I'm ging to the seond post");
 
     		axios.post(event_url, {}, {event_headers}).then(res2=> {
   			    		console.log("I'm in the seond post");
-    					console.log(res2);
+    					console.log(res2.data);
 
     		});
 		}
