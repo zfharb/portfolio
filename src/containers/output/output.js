@@ -1,26 +1,35 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
+import Pulse from '../pulse/pulse';
 
 import './output.css'
 
 class Output extends Component {
 
-  // renderElements(data) {
-  //   return (
-  //       <p key='1'>{data.detail}</p>
+/*
+	componentDidMount() {
+		this.timerID = setInterval(
+			() => tick(), 1000
+		);
+	}
 
-  //     );
+	componentWillUnmount() {
+		clearInterval(this.timerID)
+	}
 
-  // }
-  
+	tick() {
+		// create a new Pulse div in the output div
+	}
+*/
+
   render() {
     return (
-
 		<div className="rectangle">
-hello
-		</div>        
-    
+			<h2>Pulse Events</h2>
+			<Pulse name="Door Lock" date = {new Date()}/>
+			<Pulse name="Motion Zone" date = {new Date()}/>
+		</div>
     );
   }
 }
