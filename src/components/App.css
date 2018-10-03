@@ -1,23 +1,24 @@
+ 
  header {
 	 width:100%; 
 	 height:100px;
 	 
-	 background:url('./images/swiss.jpg');
-	 background-repeat: no-repeat; /* Do not repeat the image */
-	 background-position: center center;
-	 background-size: cover;
+	 
 
 
 }
 
-.my-picture {
-	 width:auto; 
+
+
+
+/*.my-picture {*/
+/*	 width:auto; 
 	 height:300px;
 	 border-style: solid;
 	 border-radius: 50%;
 	 
 	 background:url('./images/self.jpg');
-	 background-repeat: no-repeat; /* Do not repeat the image */
+	 background-repeat: no-repeat;  Do not repeat the image 
 	 background-position:50% 50%;
 	 
 	 margin-top: 10px;
@@ -27,8 +28,9 @@
 	 
 	 text-align: center;
 	 display: block;
+*/
 
-}
+/*}*/
 
 .flex-container {
  	display: flex;
