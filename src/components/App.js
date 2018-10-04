@@ -10,7 +10,7 @@ import './App.css'
 const App = () => {
   return (
 
-    <div className="background-image">
+    <div className="background">
          
       <h1>Ziad Harb</h1>
       <h2 >Web Developer</h2>
