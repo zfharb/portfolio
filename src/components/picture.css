@@ -1,0 +1,15 @@
+.picture-image {
+
+   	background-image: url("./images/venice.jpg");
+	background-size: cover;
+    width:400px;
+    height:400px;
+    margin:10px;
+    resize: both;
+
+    overflow: auto;
+
+ 	  border-radius: 50%;
+ 	
+
+}

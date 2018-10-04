@@ -1,8 +1,7 @@
 import React from 'react';
 
-import Signin from '../containers/signin/signin';
-import Output from '../containers/output/output';
-import Menu from './menu';
+import Menu from '../containers/menu/menu';
+import Picture from './picture';
 
 
 import './App.css'
@@ -11,11 +10,12 @@ import './App.css'
 const App = () => {
   return (
 
-    <div className="image">
+    <div className="background-image">
          
       <h1>Ziad Harb</h1>
       <h2 >Web Developer</h2>
       <Menu/>
+		
 		
     </div>
 
