@@ -8,22 +8,23 @@ class Menu extends Component {
 	constructor(props) {
     super(props);
     
-    this.state = {navBars: true};
-    this.toggleMenu = this.toggleMenu.bind(this);
+    // this.state = {navBars: true};
+    // this.toggleMenu = this.toggleMenu.bind(this);
 
   }
 
-	toggleMenu(event) {
-    	 this.setState({
-      		navBars: !this.state.navBars
-    	})
-	}
+	// toggleMenu(x) {
+ //    	 this.setState({
+ //      		navBars: !this.state.navBars
+ //    	})
+
+	// }
 
   	render() {
-  		const menu = this.state.navBars ? 'container' : 'change';
+  		// const menu = this.state.navBars ? 'container' : 'change';
 
     	return (
-			<div className={`${menu}`} onClick={this.toggleMenu}>
+			<div className={this.props.className} onClick={this.props.triggerProfilePage }>
   				<div className="bar1"></div>
   				<div className="bar2"></div>
   				<div className="bar3"></div>
