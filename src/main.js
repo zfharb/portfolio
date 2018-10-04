@@ -11,10 +11,10 @@ import ReduxPromise from 'redux-promise';
 const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
 
 
-render(
-  <Provider store={createStoreWithMiddleware(counterApp)}>
-    	<App />
 
+render(
+  <Provider store={createStoreWithMiddleware(counterApp)}> 
+    	<App />
   </Provider>,
   document.getElementById('root')
 )
