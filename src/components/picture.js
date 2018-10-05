@@ -6,13 +6,19 @@ import './picture.css'
 
 const Picture = (props) => {
 
-	
+ let pictureSection;
+
+    if (props.showProfile) {
+      pictureSection = 	<div className="picture-section-background" >
+      						<div className="picture-image"/>		
+    					</div>;
+    } else {
+      pictureSection = 	<div/>
+      								
+    }
 
   return (
-  	<div className={`picture-section-background  ${props.showProfile}`} >
-
-    	<div className="picture-image"/>		
-    </div>
+  	pictureSection
 
   )
 }

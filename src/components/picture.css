@@ -4,6 +4,7 @@
 	height: 100%;
     background-color: gray;	
  	opacity: .9;
+    position: absolute;
     animation-name: picture;
   	animation-duration: 2s;   
 }

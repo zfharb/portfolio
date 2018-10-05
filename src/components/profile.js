@@ -4,20 +4,25 @@ import React from 'react';
 import './profile.css'
 
 
-const Profile = () => {
+const Profile = (props) => {
+
+    let profileSection;
+
+    if (props.showProfile) {
+        profileSection =  <div className="profile-section">
+                            <ul className="profile-list">
+                                <li >Home</li>
+                                <li>About me</li>
+                                <li>My work</li>
+                                <li>How to reach me</li>
+                            </ul>
+                        </div>
+        } else {
+        profileSection =  <div/>                                
+    }
+
   return (
-
-    <div className="profile-section">
-    	<ul className="profile-list">
-    	<li >Home</li>
-    	<li>About me</li>
-    	<li>My work</li>
-    	<li>How to reach me</li>
-
-    	</ul>
-         
-    </div>
-
+    profileSection
   )
 }
 export default Profile;
