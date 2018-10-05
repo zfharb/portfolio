@@ -4,9 +4,13 @@ import React from 'react';
 import './picture.css'
 
 
-const Picture = () => {
+const Picture = (props) => {
+
+	
+
   return (
-  	<div className="picture-section">
+  	<div className={`picture-section-background  ${props.showProfile}`} >
+
     	<div className="picture-image"/>		
     </div>
 
