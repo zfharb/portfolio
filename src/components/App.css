@@ -1,5 +1,5 @@
  
-.background { 
+.main-page-background { 
    	background-image: url("./images/swiss.jpg");
 	background-size: cover;
 	position:fixed;
@@ -9,11 +9,9 @@
     left: 0;
  	width: 100%;
     height: 100%;
-     /* display: flex;
-  flex-wrap: nowrap;
-*/
-
+ 
 }
+
 
 
 h1 {
@@ -21,6 +19,8 @@ h1 {
 	white-space: nowrap; 
 	font-weight: bold;
 	color: blue;
+	padding:0;
+    margin:0;
 
 }
 
@@ -29,7 +29,9 @@ h2 {
 	color: black;
 	white-space: nowrap; 
 	font-weight: bold;
-	color: red;
+	color: black;
+	padding:0;
+    margin:0;
 }
 
 

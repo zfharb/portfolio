@@ -3,6 +3,7 @@ import {connect} from 'react-redux'
 
 import Menu from '../containers/menu/menu';
 import Picture from './picture';
+import Profile from './profile';
 
 
 import './App.css'
@@ -29,25 +30,25 @@ class App extends Component {
     render() {
 
       return (
-     <div className="background">
+        <div className="main-page-background">
 
       {this.state.isProfilePage ? (
-          <div className="background">
-          <Picture/>
+          <div>
+          <Profile/><Picture/>
           <Menu className="change" triggerProfilePage={this.openProfilePage}/>
-        </div>
+          </div>
       ) : (
-        <div className="background">
-          <h1>Ziad Harb</h1>
-          <h2 >Web Developer</h2>
-          <Menu className="container" triggerProfilePage={this.openProfilePage}/>
-        </div>
+          <div>
+            <h1>Ziad Harb</h1>
+            <h2 >Web Developer</h2>
+            <Menu className="container" triggerProfilePage={this.openProfilePage}/>
+          </div>
 
       )}
     
-    </div>
-      );
-  }
+        </div>
+      )
+    }
 }
 
 

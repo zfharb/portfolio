@@ -7,9 +7,15 @@ import './profile.css'
 const Profile = () => {
   return (
 
-    <div className="profile">
-          zzzzzzzzzzzzzzzzzzzzzzzzzzzz
-		
+    <div className="profile-section">
+    	<ul className="profile-list">
+    	<li >Home</li>
+    	<li>About me</li>
+    	<li>My work</li>
+    	<li>How to reach me</li>
+
+    	</ul>
+         
     </div>
 
   )

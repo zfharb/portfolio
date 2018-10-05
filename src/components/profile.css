@@ -1,0 +1,22 @@
+.profile-list {
+	font-size: 50px;
+   	margin-left: 25%;
+    margin-top: 25%;
+}
+
+.profile-section {
+	float: right;
+	width: 50%;
+	height: 200%;
+    background-color: #C8C8C8;
+    opacity: .9;
+    animation-name: profile;
+  	animation-duration: 2s;
+   
+}
+
+@keyframes profile {
+    0%   {width: 0%;}
+    100% {width: 50%;}
+
+}
