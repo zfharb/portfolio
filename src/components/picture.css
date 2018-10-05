@@ -1,21 +1,50 @@
-.picture-section-background {
+.picture-show-section-background {
 	float: left;
 	width: 50%;
 	height: 100%;
     background-color: gray;	
  	opacity: .9;
     position: absolute;
-    animation-name: picture;
+    animation-name: show;
   	animation-duration: 2s;   
 }
 
-@keyframes picture {
+.picture-show-image {
+
+    background-image: url("./images/venice.jpg");
+    background-size: cover;
+
+    width:400px;
+    height:400px;
+    margin:10px;
+    border-radius: 50%;
+    margin-left: 25%;
+    margin-top: 25%;
+    border-style: solid;
+    border-color: blue;
+    animation-name: hide;
+
+
+}
+
+@keyframes show {
     0%   {width: 0%;}
     100% {width: 50%;}
 
 }
 
-.picture-image {
+.picture-hide-section-background {
+    float: left;
+    width: 0%;
+    height: 100%;
+    background-color: gray; 
+    opacity: .9;
+    position: absolute;
+    animation-name: hide;
+    animation-duration: 2s;   
+}
+
+.picture-hide-image {
 
    	background-image: url("./images/venice.jpg");
 	background-size: cover;
@@ -28,4 +57,14 @@
     margin-top: 25%;
     border-style: solid;
     border-color: blue;
+    animation-name: hide;
+    animation-duration: 3s;   
+
+
+}
+
+@keyframes hide {
+    0%   {width: 400px;}
+    100% {width: 0px;}
+
 }

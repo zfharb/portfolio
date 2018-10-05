@@ -15,7 +15,8 @@ class App extends Component {
     
     this.state = {isProfilePage: false,
                   isMenuBars: true,
-                  menuClassName: 'container'};
+                  menuClassName: 'container',
+                  firstTimeToPage: true};
     
     this.openProfilePage = this.openProfilePage.bind(this);
 
@@ -26,23 +27,26 @@ class App extends Component {
 
        this.setState({
           isProfilePage: !this.state.isProfilePage,
-          isMenuBars: !this.state.isMenuBars
+          isMenuBars: !this.state.isMenuBars,
+          firstTimeToPage : false
         })
 
   }
 
-    render() {
-      const menu = this.state.isMenuBars ? 'container' : 'change';
-      return (
-        <div className="main-page-background">
-          <Picture showProfile={this.state.isProfilePage}/>
-          <Profile showProfile={this.state.isProfilePage}/>
-          <h1>Ziad Harb</h1>
-          <h2>Web Developer</h2>
-          <Menu className={menu} triggerProfilePage={this.openProfilePage}/>
-        </div>
-      )
-    }
+
+
+  render() {
+    const menu = this.state.isMenuBars ? 'container' : 'change';
+    return (
+      <div className="main-page-background">
+        <Picture firstTimeToPage={this.state.firstTimeToPage} showProfile={this.state.isProfilePage}/>
+        <Profile firstTimeToPage={this.state.firstTimeToPage} showProfile={this.state.isProfilePage}/>
+        <h1>Ziad Harb</h1>
+        <h2>Web Developer</h2>
+        <Menu className={menu} triggerProfilePage={this.openProfilePage}/>
+      </div>
+    )
+  }
 }
 
 

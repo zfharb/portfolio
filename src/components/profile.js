@@ -8,19 +8,24 @@ const Profile = (props) => {
 
     let profileSection;
 
-    if (props.showProfile) {
-        profileSection =  <div className="profile-section">
-                            <ul className="profile-list">
-                                <li >Home</li>
-                                <li>About me</li>
-                                <li>My work</li>
-                                <li>How to reach me</li>
-                            </ul>
-                        </div>
-        } else {
-        profileSection =  <div/>                                
-    }
+    if (props.firstTimeToPage) {
+      profileSection = <div/>
+    } else {
 
+        if (props.showProfile) {
+            profileSection =  <div className="profile-section">
+                                <ul className="profile-list">
+                                    <li >Home</li>
+                                    <li>About me</li>
+                                    <li>My work</li>
+                                    <li>How to reach me</li>
+                                </ul>
+                            </div>
+            } else {
+            profileSection =  <div/>                                
+        }
+    }
+    
   return (
     profileSection
   )
