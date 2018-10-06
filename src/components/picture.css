@@ -1,3 +1,4 @@
+
 .picture-show-section-background {
 	float: left;
 	width: 50%;
@@ -54,7 +55,6 @@
 
    	background-image: url("./images/venice.jpg");
 	background-size: cover;
-
     width:400px;
     height:400px;
     margin:10px;
@@ -63,6 +63,7 @@
     margin-top: 25%;
     border-style: solid;
     border-color: blue;
+    opacity: 0;
     animation-name: hideImage;
     animation-duration: 3s;   
 
@@ -70,7 +71,8 @@
 }
 
 @keyframes hideImage {
-    0%   {margin-left: 25%;}
-    100% {margin-left: 0%;}
+    0%   {opacity: .9;}
+    50%  {opacity: .4;}
+    100% {opacity: 0;}
 
 }
