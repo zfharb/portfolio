@@ -1,23 +1,46 @@
 
-.profile-section {
+.profile-show-section {
 	float: right;
 	width: 50%;
 	height: 200%;
   background-color: #C8C8C8;
   opacity: .9;
-  animation-name: profile;
+  animation-name: showProfile;
   animation-duration: 2s;
    
 }
 
-@keyframes profile {
+@keyframes showProfile {
     0%   {width: 0%;}
     100% {width: 50%;}
 
 }
 
-.profile-list {
+.profile-show-list {
   font-size: 50px;
     margin-left: 25%;
     margin-top: 25%;
+}
+
+.profile-hide-section {
+  float: right;
+  width: 50%;
+  height: 200%;
+  background-color: #C8C8C8;
+  opacity: 0;
+  animation-name: hideProfile;
+  animation-duration: 2s;
+   
+}
+
+.profile-hide-list {
+  font-size: 50px;
+    margin-left: 25%;
+    margin-top: 25%;
+}
+
+@keyframes hideProfile {
+    0%   {width: 50%;   opacity: .9;}
+    100% {width: 0%; opacity: 0}
+
 }

@@ -13,8 +13,8 @@ const Profile = (props) => {
     } else {
 
         if (props.showProfile) {
-            profileSection =  <div className="profile-section">
-                                <ul className="profile-list">
+            profileSection =  <div className="profile-show-section">
+                                <ul className="profile-show-list">
                                     <li >Home</li>
                                     <li>About me</li>
                                     <li>My work</li>
@@ -22,7 +22,14 @@ const Profile = (props) => {
                                 </ul>
                             </div>
             } else {
-            profileSection =  <div/>                                
+            profileSection =  <div className="profile-hide-section">
+                                <ul className="profile-hide-list">
+                                    <li >Home</li>
+                                    <li>About me</li>
+                                    <li>My work</li>
+                                    <li>How to reach me</li>
+                                </ul>
+                            </div>                                
         }
     }
     
