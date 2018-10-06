@@ -6,21 +6,24 @@
     background-color: gray;	
  	opacity: .9;
     position: absolute;
+    display: inline-flex;
+
     animation-name: show;
-  	animation-duration: 2s;   
+  	animation-duration: 2s; 
+
+     
 }
 
 .picture-show-image {
 
     background-image: url("./images/venice.jpg");
     background-size: cover;
-
     width:400px;
     height:400px;
-    margin:10px;
+    margin:5px;
     border-radius: 50%;
-    margin-left: 25%;
-    margin-top: 25%;
+    margin-left: 15%;
+    margin-top: 15%;
     border-style: solid;
     border-color: blue;
     animation-name: hide;
@@ -41,6 +44,8 @@
     background-color: gray; 
     opacity: .9;
     position: absolute;
+    display: inline-flex;
+
     animation-name: hide;
     animation-duration: 2s;   
 }
@@ -55,12 +60,13 @@
 
    	background-image: url("./images/venice.jpg");
 	background-size: cover;
+   
     width:400px;
     height:400px;
     margin:10px;
     border-radius: 50%;
-    margin-left: 25%;
-    margin-top: 25%;
+    margin-left: 15%;
+    margin-top: 15%;
     border-style: solid;
     border-color: blue;
     opacity: 0;
