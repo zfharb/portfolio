@@ -52,7 +52,10 @@ class App extends Component {
         </div>
         
         <div className="right-side">
-          <RightSlider firstTimeToPage={this.state.firstTimeToPage} showSlider={this.state.isMenuBars}/>
+          <RightSlider 
+          firstTimeToPage={this.state.firstTimeToPage}
+          showSlider={this.state.isMenuBars}
+          triggerProfilePage={this.openProfilePage}/>
         </div>
         <Menu className={menu} triggerProfilePage={this.openProfilePage}/>
 

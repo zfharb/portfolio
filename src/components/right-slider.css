@@ -9,10 +9,10 @@
 
 }
 
-.list {
-  font-size: 50px;
-  margin-left: 25%;
-  margin-top: 25%;
+button {
+
+   width: 100px;
+  height: 100px;
 }
 
 .show {   
