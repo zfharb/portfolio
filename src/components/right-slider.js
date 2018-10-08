@@ -1,20 +1,27 @@
 import React from 'react';
 
 
-import './profile.css'
+import './right-slider.css'
 
 
-const Profile = (props) => {
+const RightSlider = (props) => {
 
     let profileSection;
 
     if (props.firstTimeToPage) {
-      profileSection = <div/>
+      profileSection = <div className="right-slider">
+                                <ul className="list">
+                                    <li >Home</li>
+                                    <li>About me</li>
+                                    <li>My work</li>
+                                    <li>How to reach me</li>
+                                </ul>
+                        </div>
     } else {
 
-        if (props.showProfile) {
-            profileSection =  <div className="profile-show-section">
-                                <ul className="profile-show-list">
+        if (props.showSlider) {
+            profileSection =  <div className="right-slider show">
+                                <ul className="list">
                                     <li >Home</li>
                                     <li>About me</li>
                                     <li>My work</li>
@@ -22,8 +29,8 @@ const Profile = (props) => {
                                 </ul>
                             </div>
             } else {
-            profileSection =  <div className="profile-hide-section">
-                                <ul className="profile-hide-list">
+            profileSection =  <div className="right-slider hide">
+                                <ul className="list">
                                     <li >Home</li>
                                     <li>About me</li>
                                     <li>My work</li>
@@ -37,4 +44,4 @@ const Profile = (props) => {
     profileSection
   )
 }
-export default Profile;
+export default RightSlider;

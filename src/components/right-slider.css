@@ -1,0 +1,39 @@
+
+.right-slider {
+	float: right;
+	width: 50%;
+	height: 100%;
+  background-color: #C8C8C8;
+  opacity: .9;
+  display: flex;      
+}
+
+.list {
+  font-size: 50px;
+  margin-left: 25%;
+  margin-top: 25%;
+}
+
+.show {   
+    opacity: .9;
+    animation-name: show;
+    animation-duration: 2s;  
+}
+
+@keyframes show {
+    0%   {width: 0%;}
+    100% {width: 50%;}
+
+}
+
+.hide {   
+    opacity: 0;
+    animation-name: hide;
+    animation-duration: 2s;  
+}
+
+@keyframes hide {
+    0%   {width: 50%;   opacity: .9;}
+    100% {width: 0%; opacity: 0}
+
+}

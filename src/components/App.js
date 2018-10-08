@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux'
 
 import Menu from '../containers/menu/menu';
-import Picture from './picture';
-import Profile from './profile';
+import LeftSlider from './left-slider';
+import RightSlider from './right-slider';
 
 
 import './App.css'
@@ -13,8 +13,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     
-    this.state = {isProfilePage: false,
-                  isMenuBars: true,
+    this.state = {isMenuBars: true,
                   menuClassName: 'container',
                   firstTimeToPage: true};
     
@@ -26,7 +25,6 @@ class App extends Component {
   openProfilePage(event) {
 
        this.setState({
-          isProfilePage: !this.state.isProfilePage,
           isMenuBars: !this.state.isMenuBars,
           firstTimeToPage : false
         })
@@ -39,8 +37,8 @@ class App extends Component {
     const menu = this.state.isMenuBars ? 'container' : 'change';
     return (
       <div className="main-page-background">
-        <Picture firstTimeToPage={this.state.firstTimeToPage} showProfile={this.state.isProfilePage}/>
-        <Profile firstTimeToPage={this.state.firstTimeToPage} showProfile={this.state.isProfilePage}/>
+        <LeftSlider firstTimeToPage={this.state.firstTimeToPage} showSlider={this.state.isMenuBars}/>
+        <RightSlider firstTimeToPage={this.state.firstTimeToPage} showSlider={this.state.isMenuBars}/>
         <h1>Ziad Harb</h1>
         <h2>Web Developer</h2>
         <Menu className={menu} triggerProfilePage={this.openProfilePage}/>
