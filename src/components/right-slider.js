@@ -10,32 +10,17 @@ const RightSlider = (props) => {
 
     if (props.firstTimeToPage) {
       profileSection = <div className="right-slider">
-                        <ul className="list">
-                                    <li >Home</li>
-                                    <li>About me</li>
-                                    <li>My work</li>
-                                    <li>How to reach me</li>
-                                </ul>
+                        <a href="">clicl here to enter portfolio</a>
                         </div>
     } else {
 
         if (props.showSlider) {
             profileSection =  <div className="right-slider show">
-                                <ul className="list">
-                                    <li >Home</li>
-                                    <li>About me</li>
-                                    <li>My work</li>
-                                    <li>How to reach me</li>
-                                </ul>
+                                
                             </div>
             } else {
             profileSection =  <div className="right-slider hide">
-                                <ul className="list">
-                                    <li >Home</li>
-                                    <li>About me</li>
-                                    <li>My work</li>
-                                    <li>How to reach me</li>
-                                </ul>
+                                
                             </div>                                
         }
     }
