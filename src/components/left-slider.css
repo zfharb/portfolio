@@ -24,9 +24,7 @@ img {
     border-color: blue;
 }
 
-.show {
-
-   
+.show {   
     opacity: .9;
     animation-name: show;
     animation-duration: 2s;  
