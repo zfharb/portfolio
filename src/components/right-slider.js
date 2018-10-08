@@ -10,7 +10,7 @@ const RightSlider = (props) => {
 
     if (props.firstTimeToPage) {
       profileSection = <div className="right-slider">
-                                <ul className="list">
+                        <ul className="list">
                                     <li >Home</li>
                                     <li>About me</li>
                                     <li>My work</li>

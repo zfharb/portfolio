@@ -36,12 +36,20 @@ class App extends Component {
   render() {
     const menu = this.state.isMenuBars ? 'container' : 'change';
     return (
-      <div className="main-page-background">
-        <LeftSlider firstTimeToPage={this.state.firstTimeToPage} showSlider={this.state.isMenuBars}/>
-        <RightSlider firstTimeToPage={this.state.firstTimeToPage} showSlider={this.state.isMenuBars}/>
-        <h1>Ziad Harb</h1>
-        <h2>Web Developer</h2>
+      <div className="wrapper">
+        <div id="name-title">
+          <h1> Ziad Harb</h1>
+          <h2>Web Developer</h2>
+        </div>
+        <div className="left-side">
+          <LeftSlider firstTimeToPage={this.state.firstTimeToPage} showSlider={this.state.isMenuBars}/>
+        </div>
+        
+        <div className="right-side">
+          <RightSlider firstTimeToPage={this.state.firstTimeToPage} showSlider={this.state.isMenuBars}/>
+        </div>
         <Menu className={menu} triggerProfilePage={this.openProfilePage}/>
+
       </div>
     )
   }

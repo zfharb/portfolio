@@ -1,18 +1,37 @@
  
-.main-page-background { 
+.wrapper { 
+	display: flex;
+   flex-wrap: nowrap;
+
    	background-image: url("./images/swiss.jpg");
 	background-size: cover;
 	position:fixed;
     padding:0;
     margin:0;
     top: 0;
-    left: 0;
+    left: 0; 
  	width: 100%;
-    height: 100%;
- 
+    height: 100%; 
 }
 
+#name-title {
+   position: absolute;
+   top: 0;
+   left: 0;
+  
+}
 
+.left-side {
+	 align-items: flex-start ;
+	 width: 50%;
+	height: 100%;
+}
+
+.right-side {
+	 align-items: flex-end ;
+	 width: 50%;
+	height: 100%;
+}
 
 h1 {
 	font-size: 6rem; 
@@ -21,6 +40,7 @@ h1 {
 	color: blue;
 	padding:0;
     margin:0;
+
 }
 
 h2 {
@@ -33,7 +53,11 @@ h2 {
     margin:0;
 }
 
+.list {
+	    float: right;
 
+	 
+}
 
 /*.my-picture {*/
 /*	 width:auto; 
