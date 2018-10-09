@@ -24,7 +24,7 @@ const RightSlider = (props) => {
                               </div>
             } else {
             profileSection =  <div className="hide-right-slider">
-                                <button className="open-portfolio-button" 
+                                <button className="hide-portfolio-button" 
                                         onClick={props.triggerProfilePage }><p>click here to open portfolio</p>
                                 </button>
                               </div>                                
