@@ -43,7 +43,9 @@ class App extends Component {
         </div>
         <div id="list">
           <div>
-            <button onClick={this.openProfilePage}><p>click here to close portfolio</p></button>
+            <button className="main-page-home-button" 
+                    onClick={this.openProfilePage}><p>click here to close portfolio</p>
+            </button>
           </div>
           <div>About me</div>
           <div>My work</div>
