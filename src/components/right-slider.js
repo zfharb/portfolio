@@ -10,18 +10,18 @@ const RightSlider = (props) => {
 
     if (props.firstTimeToPage) {
       profileSection = <div className="right-slider" >
-                        <button onClick={props.triggerProfilePage }><p>click here to enter portfolio</p></button>
+                        <button className="slider-home-button" onClick={props.triggerProfilePage }><p>click here to open portfolio</p></button>
                         </div>
     } else {
 
         if (props.showSlider) {
             profileSection =  <div className="right-slider show">
-                        <button onClick={props.triggerProfilePage }>click here to enter portfolio</button>
+                        <button className="slider-home-button" onClick={props.triggerProfilePage }>click here to enter portfolio</button>
 
                             </div>
             } else {
             profileSection =  <div className="right-slider hide">
-                        <button onClick={props.triggerProfilePage }>click here to enter portfolio</button>
+                        <button className="slider-home-button" onClick={props.triggerProfilePage }>click here to enter portfolio</button>
 
                             </div>                                
         }

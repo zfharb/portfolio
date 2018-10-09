@@ -21,6 +21,22 @@
   
 }
 
+#list {
+   position: absolute;
+   top: 25%;
+   right: 25%;
+  
+}
+
+.main-page-home-button {
+	color: white;
+    background-color: gray;
+    top:50%; 
+    left:50%;
+  	width: 100px;
+  	height: 100px;
+}
+
 .left-side {
 	 align-items: flex-start ;
 	 width: 50%;
