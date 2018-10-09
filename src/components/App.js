@@ -15,7 +15,8 @@ class App extends Component {
     
     this.state = {isMenuBars: true,
                   menuClassName: 'container',
-                  firstTimeToPage: true};
+                  firstTimeToPage: true,
+                  isPortfolioOpen: false};
     
     this.openProfilePage = this.openProfilePage.bind(this);
 
@@ -26,7 +27,8 @@ class App extends Component {
 
        this.setState({
           isMenuBars: !this.state.isMenuBars,
-          firstTimeToPage : false
+          firstTimeToPage: false,
+          isPortfolioOpen: !this.state.isPortfolioOpen
         })
 
   }
@@ -52,7 +54,9 @@ class App extends Component {
           <div>How to reach me</div>
         </div>
         <div className="left-side">
-          <LeftSlider firstTimeToPage={this.state.firstTimeToPage} showSlider={this.state.isMenuBars}/>
+          <LeftSlider 
+          firstTimeToPage={this.state.firstTimeToPage} 
+          openPortfolio={this.state.isPortfolioOpen}/>
         </div>
         
         <div className="right-side">

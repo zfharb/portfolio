@@ -15,12 +15,12 @@ const LeftSlider = (props) => {
                         </div>;
     } else {
 
-      if (props.showSlider) {
-      pictureSection =  <div className="left-slider show" >
+      if (props.openPortfolio) {
+      pictureSection =  <div className="hide-left-slider" >
                           <img/>   
                         </div>;
       } else {
-      pictureSection =  <div className="left-slider hide" >
+      pictureSection =  <div className="show-left-slider" >
                           <img/>     
                         </div>;
                       
