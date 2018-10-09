@@ -43,16 +43,16 @@ class App extends Component {
           <h1> Ziad Harb</h1>
           <h2>Web Developer</h2>
         </div>
-        <div id="list">
-          <div>
+        <div id="home-button">
             <button className="main-page-home-button" 
                     onClick={this.openProfilePage}><p>click here to close portfolio</p>
             </button>
-          </div>
-          <div>About me</div>
-          <div>My work</div>
-          <div>How to reach me</div>
+          
         </div>
+        <div id="about-me">about me</div>
+        <div id="my-work">my work</div>
+        <div id="reach-me">how to reach me</div>
+
         <div className="left-side">
           <LeftSlider 
           firstTimeToPage={this.state.firstTimeToPage} 

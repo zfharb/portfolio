@@ -41,7 +41,7 @@
 
 .open-portfolio-button {
   color: white;
-  background-color: black;
+  background-color: green;
   top:50%; 
   left:50%;
   width: 100px;
@@ -50,7 +50,7 @@
 
 .hide-portfolio-button {
   color: white;
-  background-color: black;
+  background-color: green;
   opacity: 0;
   top:50%; 
   left:50%;
