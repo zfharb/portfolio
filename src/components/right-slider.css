@@ -48,21 +48,12 @@
   height: 100px;
 }
 
-.show {   
-    animation-name: show;
-    animation-duration: 2s;  
-}
-
 @keyframes show {
     0%   {width: 0%;}
     100% {width: 100%;}
 
 }
 
-.hide {   
-    animation-name: hide;
-    animation-duration: 2s;  
-}
 
 @keyframes hide {
     0%   {width: 100%;}
