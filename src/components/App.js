@@ -43,15 +43,14 @@ class App extends Component {
           <h1> Ziad Harb</h1>
           <h2>Web Developer</h2>
         </div>
-        <div id="home-button">
-            <button className="main-page-home-button" 
-                    onClick={this.openProfilePage}><p>click here to close portfolio</p>
-            </button>
-          
-        </div>
-        <div id="about-me">about me</div>
-        <div id="my-work">my work</div>
-        <div id="reach-me">how to reach me</div>
+        {/* <div id="home-button">
+          <button className="main-page-home-button" 
+            onClick={this.openProfilePage}><p>click here to close portfolio</p>
+          </button>   
+        </div> */}
+        <a href="" id="about-me">about me</a>
+        <a href="" id="my-work">my work</a>
+        <a href="" id="reach-me">how to reach me</a>
 
         <div className="left-side">
           <LeftSlider 
