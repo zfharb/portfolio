@@ -6,19 +6,19 @@ import './about.css'
 class About extends Component {
 
   constructor(props) {
-    super(props);    
+    super(props); 
+
   }
 
   render() {
   
     return (
+      
       <div>
-        about page
+        This is the about page
       </div>
-    )
+      );
   }
 }
-
-
 
 export default About;
