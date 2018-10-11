@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 import './left-slider.css'
 
 
@@ -11,17 +10,23 @@ const LeftSlider = (props) => {
 
     if (props.firstTimeToPage) {
       pictureSection = <div className="left-slider" >
-                          <img/>   
+                          <div className="img-box">
+                            <img className="img" />
+                          </div>   
                         </div>;
     } else {
 
       if (props.openPortfolio) {
       pictureSection =  <div className="hide-left-slider" >
-                          <img/>   
+                          <div className="img-box">
+                            <img className="img" />
+                          </div>   
                         </div>;
       } else {
       pictureSection =  <div className="show-left-slider" >
-                          <img/>     
+                          <div className="img-box">
+                            <img className="img" />
+                          </div>   
                         </div>;
                       
       }
