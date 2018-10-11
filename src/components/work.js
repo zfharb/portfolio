@@ -3,15 +3,15 @@ import React from 'react';
 
 import './about.css'
 
-const About =() => {
+const Work =() => {
  
     return (
       
       <div>
-        This is the about page
+        This is the my work page
       </div>
       );
   
 }
 
-export default About;
+export default Work;
