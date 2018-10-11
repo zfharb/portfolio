@@ -3,7 +3,7 @@
    display: grid;
    grid-template-columns: 1fr 1fr;
 
-   	background-image: url("./images/swiss.jpg");
+   	background-image: url("../../images/swiss.jpg");
 	background-size: cover;
 	position:fixed;
     padding:0;
