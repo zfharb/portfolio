@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link } from 'react-router-dom';
 
 
 import './about.css'
@@ -10,6 +11,7 @@ const About =() => {
       <div className="about-container">
       	<h1 className="lg-heading"> About <span style={{color:'yellow'}}>Me</span> </h1>
       	<h2 className="sm-heading"> Let me tell you a few things...</h2>
+
       	<div className="about-grid">
       		<img src="..\/..\/images\/venice.jpg" className="bio-image"/>
       		<div className="bio">
