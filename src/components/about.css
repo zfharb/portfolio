@@ -19,10 +19,12 @@ h1.lg-heading {
 }
 
 h2.sm-heading {
+    font-size: 2rem;
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     /*background: rgba(73, 73, 73, 0.5);*/
     margin-left: 30px;
+    font-weight: 400;
 }
 
 h3 {
@@ -42,15 +44,7 @@ h3 {
     'job1 job2 job3';
   	grid-gap: 30px;
   	grid-template-columns: repeat(3, 1fr);
-    /*background-color: gray;
-    padding: 10px;
-    top: 0;
-    left: 0; 
- 	width: 100%;
-    height: 100%;
-	background-size: cover;
-	position:fixed;
-	opacity: 1*/
+    margin: 20px;
 }
 
 .bio-image {
@@ -60,25 +54,7 @@ h3 {
     border-radius: 50%;
     border: #eece1a 3px solid;
     width: 200px;
-  	height: 200px; 
-
-/*	grid-area: bioimage;
-	position:relative;
-    
-    border-style: solid;
-    border-color: blue;
-
-
-	 width: 25%;
-  	height: 100%; 
-    border-radius:50%;
-
-
-  background-position: center center;
-   
-    background-repeat: no-repeat;
-*/
-   
+  	height: 200px;    
 }
 
 .bio {
@@ -118,18 +94,5 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     color: white;
-}
-
-.item1 { grid-area: header;
-		 height: 100%;
-    width: 100%;
-        margin:0;
-
-
-
-}
-.item2 { grid-area: bio;         margin:0;
-}
-.item3 { grid-area: work;         margin:0;
 }
 
