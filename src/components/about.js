@@ -7,8 +7,15 @@ const About =() => {
  
     return (
       
-      <div>
-        This is the about page
+      <div className="about-container">
+
+      	<div className="item1">Header
+      	</div>
+  		<div className="item2">Bio
+  		                            <img className="about-img" />
+		</div>
+  		<div className="item3">Work</div>  
+  
       </div>
       );
   
