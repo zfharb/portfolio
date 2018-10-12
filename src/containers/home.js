@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
+import {Link } from 'react-router-dom';
 
 import Menu from './menu';
 import LeftSlider from '../components/left-slider';
@@ -49,7 +50,9 @@ class Home extends Component {
             onClick={this.openProfilePage}><p>click here to close portfolio</p>
           </button>   
         </div> */}
-        <a href="" id="about-me">about me</a>
+       
+        <Link to="/about" id="about-me">about me</Link>
+
         <a href="" id="my-work">my work</a>
         <a href="" id="reach-me">how to reach me</a>
 
