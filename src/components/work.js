@@ -9,6 +9,10 @@ const Work =() => {
       
       <div>
         This is the my work page
+
+        <br/>
+        <Link to="/">HOME</Link>
+
       </div>
       );
   

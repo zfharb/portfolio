@@ -11,6 +11,8 @@ const About =() => {
       <div className="about-container">
       	<h1 className="lg-heading"> About <span style={{color:'yellow'}}>Me</span> </h1>
       	<h2 className="sm-heading"> Let me tell you a few things...</h2>
+		<br/>
+        <Link to="/">HOME</Link>
 
       	<div className="about-grid">
       		<img src="..\/..\/images\/venice.jpg" className="bio-image"/>
