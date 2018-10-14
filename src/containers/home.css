@@ -1,8 +1,5 @@
  
 .wrapper { 
-  /*display: grid;
-  grid-template-areas: 'left-slider right-slider';
-  grid-template-columns: repeat(2, 1fr);*/
   background-image: url("../../images/swiss.jpg");
   background-size:cover;
   background-repeat:no-repeat;
@@ -93,13 +90,17 @@ h2 {
   	height: 100px;
 }
 
-.left-side {
-   	width: 100%;
+/*LeftSlider {
+  position: fixed;
+
+  width: 50%;
 	height: 100%;
 }
 
-.right-side {
-	width: 100%;
+RightSlider {
+  position: fixed;
+
+	width: 50%;
 	height: 100%;
-}
+}*/
 

@@ -9,25 +9,13 @@ const RightSlider = (props) => {
     let profileSection;
 
     if (props.firstTimeToPage) {
-      profileSection = <div className="right-slider" >
-                            {/*<button className="open-portfolio-button" 
-                                    onClick={props.triggerProfilePage }><p>click here to open portfolio</p>
-                            </button> */}
-                        </div>
+      profileSection = <div className="right-slider"/>
     } else {
 
-        if (props.showSlider) {
-            profileSection =  <div className="show-right-slider">
-                                {/* <button className="open-portfolio-button"
-                                        onClick={props.triggerProfilePage }><p>click here to open portfolio</p>
-                                </button> */}
-                              </div>
+        if (props.isOpenProfile) {
+            profileSection =  <div className="hide-right-slider"/>
             } else {
-            profileSection =  <div className="hide-right-slider">
-                                {/*<button className="hide-portfolio-button" 
-                                        onClick={props.triggerProfilePage }><p>click here to open portfolio</p>
-                                </button> */}
-                              </div>                                
+            profileSection =  <div className="show-right-slider"/>                                
         }
     }
     

@@ -16,7 +16,7 @@ const LeftSlider = (props) => {
                         </div>;
     } else {
 
-      if (props.openPortfolio) {
+      if (props.isOpenProfile) {
       pictureSection =  <div className="hide-left-slider" >
                           <div className="img-box">
                             <img className="img" />

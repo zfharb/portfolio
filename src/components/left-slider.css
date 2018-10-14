@@ -2,9 +2,11 @@
 .left-slider {
     display: flex;
     float: left;
-
-    width: 100%;
+    position: fixed;
+    width: 50%;
     height: 100%;
+    top: 0;
+    left: 0;
     background-color: gray; 
     opacity: .9;
     
@@ -62,8 +64,11 @@
 .show-left-slider {
   display: flex;
   float: left;
-  width: 100%;
+  position: fixed;
+  width: 50%;
   height: 100%;
+  top: 0;
+  left: 0;
   background-color: gray; 
   opacity: .9;
   animation-name: show;
@@ -74,8 +79,11 @@
 .hide-left-slider {
   display: flex;
   float: left;
+  position: fixed;
   width: 0%;
   height: 100%;
+  top: 0;
+  left: 0;
   background-color: gray; 
   opacity: .9;
   animation-name: hide;
@@ -85,13 +93,13 @@
 
 @keyframes show {
     0%   {width: 0%;}
-    100% {width: 100%;}
+    100% {width: 50%;}
 
 }
 
 
 @keyframes hide {
-     0%   {width: 100%;}
+     0%   {width: 50%;}
     100% {width: 0%;}
 
 }

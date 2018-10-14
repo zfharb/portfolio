@@ -14,10 +14,9 @@ class Home extends Component {
   constructor(props) {
     super(props);
     
-    this.state = {isOpenSiteBarsClicked: true,
+    this.state = {isOpenSiteBarsClicked: false,
                   menuClassName: 'container',
-                  firstTimeToPage: true,
-                  isPortfolioOpen: false};
+                  firstTimeToPage: true};
     
     this.openProfilePage = this.openProfilePage.bind(this);
 
@@ -28,16 +27,14 @@ class Home extends Component {
 
        this.setState({
           isOpenSiteBarsClicked: !this.state.isOpenSiteBarsClicked,
-          firstTimeToPage: false,
-          isPortfolioOpen: !this.state.isPortfolioOpen
-        })
+          firstTimeToPage: false})
 
   }
 
 
 
   render() {
-    const menu = this.state.isOpenSiteBarsClicked ? 'container' : 'change';
+    const menu = this.state.isOpenSiteBarsClicked ? 'change' : 'container';
     return (
      
       <div className="wrapper">
@@ -55,20 +52,17 @@ class Home extends Component {
         <Link to="/reach" className="reach-me">how to reach me</Link>
 
         
-{/*
-        <div className="left-side">
-          <LeftSlider 
-          firstTimeToPage={this.state.firstTimeToPage} 
-          openPortfolio={this.state.isPortfolioOpen}/>
-        </div>
+
         
-        <div className="right-side">
-          <RightSlider 
+          <LeftSlider 
           firstTimeToPage={this.state.firstTimeToPage}
-          showSlider={this.state.isMenuBars}
-          triggerProfilePage={this.openProfilePage}/>
-        </div>
-*/}
+          isOpenProfile={this.state.isOpenSiteBarsClicked}/>
+        
+        
+          <RightSlider
+          firstTimeToPage={this.state.firstTimeToPage}
+          isOpenProfile={this.state.isOpenSiteBarsClicked}/>
+        
       <Menu className={menu} triggerProfilePage={this.openProfilePage}/>
 
       </div>
