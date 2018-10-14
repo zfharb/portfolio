@@ -1,23 +1,35 @@
  
 .wrapper { 
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-
-   	background-image: url("../../images/swiss.jpg");
-	background-size: cover;
-	position:fixed;
-    padding:0;
-    margin:0;
-    top: 0;
-    left: 0; 
- 	width: 100%;
-    height: 100%; 
+  /*display: grid;
+  grid-template-areas: 'left-slider right-slider';
+  grid-template-columns: repeat(2, 1fr);*/
+  background-image: url("../../images/swiss.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+	position:absolute;
+ 	width: auto;
+  height: 100%; 
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0; 
 }
 
-#name-title {
-   position: absolute;
-   top: 0;
-   left: 0;
+
+.name {
+  position: absolute;
+  padding: 0px;
+  margin: 0px;
+  top: 0%;
+  left:0%;
+}
+
+.title {
+  position: absolute;
+  padding: 0px;
+  margin: 0px;
+  top: 30%;
+  left:0%;
 }
 
 h1 {
@@ -25,24 +37,15 @@ h1 {
 	white-space: nowrap; 
 	font-weight: bold;
 	color: white;
-	padding:0;
-    margin:0;
-
 }
 
 h2 {
 	font-size: 4rem; 
-	color: black;
 	white-space: nowrap; 
 	font-weight: bold;
 	color: white;
-	padding:0;
-    margin:0;
 }
 
-a:link {
-    text-decoration: none;
-}
 
 #home-button {
    position: absolute;
@@ -50,48 +53,35 @@ a:link {
    right: 15%;
 }
 
-#about-me {
+.about-me {
 	color: #B0C4DE;
 	font: bold;
-	font-size: 4rem; 
+	font-size: 2rem; 
 	position: absolute;
+  white-space: wrap; 
  	bottom: 10%;
- 	right: 10%;
+ 	left: 10%;
+  text-decoration: none;
 }
-#my-work {
+.my-work {
   color: #B0C4DE;
   font: bold;
-  font-size: 4rem; 
+  font-size: 2rem; 
   position: absolute;
+  white-space: wrap; 
   bottom: 10%;
-  right: 40%;
+  left: 40%;
+  text-decoration: none;
 }
-#reach-me {
+.reach-me {
   color: #B0C4DE;
   font: bold;
-  font-size: 4rem; 
+  font-size: 2rem; 
   position: absolute;
+  white-space: wrap; 
   bottom: 10%;
-  right: 70%;
-}
-
-#my-work {
-	color: #B0C4DE;
-	font: bold;
-		font-size: 4rem; 
-
-   position: absolute;
-   bottom: 10%;
-   left: 45%;  
-}
-
-#reach-me {
-	color: #B0C4DE;
-	font: bold;
-	font-size: 4rem; 
-  position: absolute;
-  bottom: 10%;
-  left: 10%;  
+  right: 10%;
+  text-decoration: none;
 }
 
 .main-page-home-button {

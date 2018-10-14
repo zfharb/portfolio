@@ -12,10 +12,10 @@ const About =() => {
       	<h1 className="lg-heading"> About <span style={{color:'yellow'}}>Me</span> </h1>
       	<h2 className="sm-heading"> Let me tell you a few things...</h2>
 		<br/>
-        <Link to="/">HOME</Link>
+        <Link className="nav-home" to="/">HOME</Link>
 
       	<div className="about-grid">
-      		<img src="..\/..\/images\/venice.jpg" className="bio-image"/>
+      		<img className="bio-image" src="..\/..\/images\/venice.jpg"/>
       		<div className="bio">
       			<h3>BIO</h3>
       			<p>
@@ -24,6 +24,7 @@ const About =() => {
       			</p>
       		</div>
       		<div className="job job-1">
+      		   <p>
 	      		<h3 style={{textAlign: 'center'}}>ADT</h3>
 	      		<ul>
 	  				<li>Work on an API response parser login page using Reactjs and Redux.</li>
@@ -32,9 +33,11 @@ const About =() => {
 	  				<br/>
 	  				<li>Apply Agile Kanban methodologies for software development.</li>
 				</ul>
+      			</p>
       			
       		</div>
-      		<div className="job job-2">
+      	    <div className="job job-2">
+   		    <p>
       			<h3 style={{textAlign: 'center'}}>USAA</h3>
       			<ul>
 	  				<li>Developed UI test automation framework for a React JS web application using ECMAScript 6, Mocha, Chai and Selenium WebDriverIO.</li>
@@ -45,8 +48,10 @@ const About =() => {
 	  				<br/>
 	  				<li>Apply Agile Kanban methodologies for software development.</li>
 				</ul>
+			</p>
       		</div>
       		<div className="job job-3">
+      		<p>
       			<h3 style={{textAlign: 'center'}}>KAPLAN</h3>
       			<ul>
 	  				<li>Developed UI automation framework for AngularJS web application using Java, Maven and TestNg.</li>
@@ -59,6 +64,7 @@ const About =() => {
 	  				<br/>
 	  				<li>Applied Agile Scrum methodologies for software development.</li>
 				</ul>
+			</p>
       		</div>
 		</div>  
       	

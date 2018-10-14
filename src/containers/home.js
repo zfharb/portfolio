@@ -14,7 +14,7 @@ class Home extends Component {
   constructor(props) {
     super(props);
     
-    this.state = {isMenuBarsClicked: true,
+    this.state = {isOpenSiteBarsClicked: true,
                   menuClassName: 'container',
                   firstTimeToPage: true,
                   isPortfolioOpen: false};
@@ -27,7 +27,7 @@ class Home extends Component {
   openProfilePage(event) {
 
        this.setState({
-          isMenuBarsClicked: !this.state.isMenuBarsClicked,
+          isOpenSiteBarsClicked: !this.state.isOpenSiteBarsClicked,
           firstTimeToPage: false,
           isPortfolioOpen: !this.state.isPortfolioOpen
         })
@@ -37,23 +37,22 @@ class Home extends Component {
 
 
   render() {
-    const menu = this.state.isMenuBars ? 'container' : 'change';
+    const menu = this.state.isOpenSiteBarsClicked ? 'container' : 'change';
     return (
      
       <div className="wrapper">
-        <div id="name-title">
-          <h1> Ziad Harb</h1>
-          <h2>Web Developer</h2><br/>
-        </div>
+          <h1 className="name"> Ziad Harb</h1><br/>
+          <h2 className="title">Web Developer</h2><br/>
+
         {/* <div id="home-button">
           <button className="main-page-home-button" 
             onClick={this.openProfilePage}><p>click here to close portfolio</p>
           </button>   
         </div> */}
        
-        <Link to="/about" id="about-me">about me</Link>
-        <Link to="/reach" id="reach-me">how to reach me</Link>
-        <Link to="/work" id="my-work">my work</Link>
+        <Link to="/about" className="about-me">about me</Link>
+        <Link to="/work" className="my-work">my work</Link>
+        <Link to="/reach" className="reach-me">how to reach me</Link>
 
         
 {/*
@@ -69,8 +68,9 @@ class Home extends Component {
           showSlider={this.state.isMenuBars}
           triggerProfilePage={this.openProfilePage}/>
         </div>
-        <Menu className={menu} triggerProfilePage={this.openProfilePage}/>
 */}
+      <Menu className={menu} triggerProfilePage={this.openProfilePage}/>
+
       </div>
     )
   }
