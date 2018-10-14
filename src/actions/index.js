@@ -3,6 +3,12 @@ import axios from 'axios';
 
 const SIGNIN_URL = ``
 
+export const clickOpenSiteBars  = () => ({
+      type: actionType.CLICK_OPEN_SITE_BARS,
+      payload: 1
+});
+
+
 export const signin  = (userName, password) => {
 
 

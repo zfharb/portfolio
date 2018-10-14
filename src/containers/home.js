@@ -14,7 +14,7 @@ class Home extends Component {
   constructor(props) {
     super(props);
     
-    this.state = {isMenuBars: true,
+    this.state = {isMenuBarsClicked: true,
                   menuClassName: 'container',
                   firstTimeToPage: true,
                   isPortfolioOpen: false};
@@ -27,7 +27,7 @@ class Home extends Component {
   openProfilePage(event) {
 
        this.setState({
-          isMenuBars: !this.state.isMenuBars,
+          isMenuBarsClicked: !this.state.isMenuBarsClicked,
           firstTimeToPage: false,
           isPortfolioOpen: !this.state.isPortfolioOpen
         })
@@ -43,7 +43,7 @@ class Home extends Component {
       <div className="wrapper">
         <div id="name-title">
           <h1> Ziad Harb</h1>
-          <h2>Web Developer</h2>
+          <h2>Web Developer</h2><br/>
         </div>
         {/* <div id="home-button">
           <button className="main-page-home-button" 
@@ -52,10 +52,11 @@ class Home extends Component {
         </div> */}
        
         <Link to="/about" id="about-me">about me</Link>
+        <Link to="/reach" id="reach-me">how to reach me</Link>
+        <Link to="/work" id="my-work">my work</Link>
 
-        <a href="" id="my-work">my work</a>
-        <a href="" id="reach-me">how to reach me</a>
-
+        
+{/*
         <div className="left-side">
           <LeftSlider 
           firstTimeToPage={this.state.firstTimeToPage} 
@@ -69,7 +70,7 @@ class Home extends Component {
           triggerProfilePage={this.openProfilePage}/>
         </div>
         <Menu className={menu} triggerProfilePage={this.openProfilePage}/>
-
+*/}
       </div>
     )
   }

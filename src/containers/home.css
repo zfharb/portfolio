@@ -58,6 +58,22 @@ a:link {
  	bottom: 10%;
  	right: 10%;
 }
+#my-work {
+  color: #B0C4DE;
+  font: bold;
+  font-size: 4rem; 
+  position: absolute;
+  bottom: 10%;
+  right: 40%;
+}
+#reach-me {
+  color: #B0C4DE;
+  font: bold;
+  font-size: 4rem; 
+  position: absolute;
+  bottom: 10%;
+  right: 70%;
+}
 
 #my-work {
 	color: #B0C4DE;

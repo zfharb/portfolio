@@ -8,7 +8,6 @@ const outputReducer = (state = [], action) => {
     case actionType.SIGNIN:
 
     	console.log("I'm in SIGNIN reducer");
-    	// console.log(action.payload.data);
     	
       	return [action.payload.data, ...state];
       	
