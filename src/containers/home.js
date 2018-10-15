@@ -45,7 +45,7 @@ class Home extends Component {
           </button>   
         </div> */}
        
-        <Link to="/about" className="about-me">about me</Link>
+        <Link to="/about" className="about-me" >about me</Link>
         <Link to="/work" className="my-work">my work</Link>
         <Link to="/reach" className="reach-me">how to reach me</Link>
 

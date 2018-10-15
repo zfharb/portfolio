@@ -12,7 +12,7 @@ const About =() => {
       	<h1 className="lg-heading"> About <span style={{color:'yellow'}}>Me</span> </h1>
       	<h2 className="sm-heading"> Let me tell you a few things...</h2>
 		<br/>
-        <Link className="nav-home" to="/">HOME</Link>
+        <Link className="nav-home" to="/" >HOME</Link>
 
       	<div className="about-grid">
       		<img className="bio-image" src="..\/..\/images\/venice.jpg"/>

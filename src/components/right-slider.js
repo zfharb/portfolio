@@ -10,6 +10,7 @@ const RightSlider = (props) => {
 
     if (props.firstTimeToPage) {
       profileSection = <div className="right-slider-closed"/>
+
     } else {
 
         if (props.isOpenProfile) {
