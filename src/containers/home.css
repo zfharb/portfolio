@@ -19,6 +19,9 @@
   margin: 0px;
   top: 0%;
   left:0%;
+  font-size: 8vw; 
+
+
 }
 
 .title {
@@ -27,17 +30,18 @@
   margin: 0px;
   top: 30%;
   left:0%;
+  font-size: 4vw; 
+
 }
 
 h1 {
-	font-size: 6rem; 
+	 
 	white-space: nowrap; 
 	font-weight: bold;
 	color: white;
 }
 
 h2 {
-	font-size: 4rem; 
 	white-space: nowrap; 
 	font-weight: bold;
 	color: white;
@@ -53,7 +57,7 @@ h2 {
 .about-me {
 	color: #B0C4DE;
 	font: bold;
-	font-size: 2rem; 
+  font-size: 4vw; 
 	position: absolute;
   white-space: wrap; 
  	bottom: 10%;
@@ -63,7 +67,7 @@ h2 {
 .my-work {
   color: #B0C4DE;
   font: bold;
-  font-size: 2rem; 
+  font-size: 4vw; 
   position: absolute;
   white-space: wrap; 
   bottom: 10%;
@@ -73,7 +77,7 @@ h2 {
 .reach-me {
   color: #B0C4DE;
   font: bold;
-  font-size: 2rem; 
+  font-size: 4vw; 
   position: absolute;
   white-space: wrap; 
   bottom: 10%;
