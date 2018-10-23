@@ -1,5 +1,5 @@
 
-.right-slider {
+.right-slider-closed {
   display: flex;
   float: right;
   position: fixed;
@@ -10,6 +10,19 @@
   background-color: #C8C8C8;
   opacity: .9;
 }
+
+.right-slider-opened {
+  display: flex;
+  float: right;
+  position: fixed;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #C8C8C8;
+  opacity: .9;
+}
+
 
 .show-right-slider {
   display: flex;

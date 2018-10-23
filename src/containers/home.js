@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import {Link } from 'react-router-dom';
+import {bindActionCreators} from 'redux'
 
 import Menu from './menu';
 import LeftSlider from '../components/left-slider';
 import RightSlider from '../components/right-slider';
+import { ClickOpenSiteBars } from '../actions/index';
 
 
 import './home.css'
@@ -14,9 +16,7 @@ class Home extends Component {
   constructor(props) {
     super(props);
     
-    this.state = {isOpenSiteBarsClicked: false,
-                  menuClassName: 'container',
-                  firstTimeToPage: true};
+    this.state = {menuClassName: 'container'};
     
     this.openProfilePage = this.openProfilePage.bind(this);
 
@@ -25,16 +25,14 @@ class Home extends Component {
 
   openProfilePage(event) {
 
-       this.setState({
-          isOpenSiteBarsClicked: !this.state.isOpenSiteBarsClicked,
-          firstTimeToPage: false})
+       this.props.ClickOpenSiteBars(this.props.siteStatus.isOpenSiteBarsClicked, this.props.siteStatus.isFirstTimeToSite);
 
   }
 
 
 
   render() {
-    const menu = this.state.isOpenSiteBarsClicked ? 'change' : 'container';
+    const menu = this.props.siteStatus.isOpenSiteBarsClicked ? 'change' : 'container';
     return (
      
       <div className="wrapper">
@@ -47,21 +45,19 @@ class Home extends Component {
           </button>   
         </div> */}
        
-        <Link to="/about" className="about-me">about me</Link>
+        <Link to="/about" className="about-me" >about me</Link>
         <Link to="/work" className="my-work">my work</Link>
         <Link to="/reach" className="reach-me">how to reach me</Link>
 
-        
 
-        
           <LeftSlider 
-          firstTimeToPage={this.state.firstTimeToPage}
-          isOpenProfile={this.state.isOpenSiteBarsClicked}/>
+          firstTimeToPage={this.props.siteStatus.isFirstTimeToSite}
+          isOpenProfile={this.props.siteStatus.isOpenSiteBarsClicked}/>
         
         
           <RightSlider
-          firstTimeToPage={this.state.firstTimeToPage}
-          isOpenProfile={this.state.isOpenSiteBarsClicked}/>
+          firstTimeToPage={this.props.siteStatus.isFirstTimeToSite}
+          isOpenProfile={this.props.siteStatus.isOpenSiteBarsClicked}/>
         
       <Menu className={menu} triggerProfilePage={this.openProfilePage}/>
 
@@ -72,7 +68,13 @@ class Home extends Component {
 
 
 function mapStateToProps(state) {
-  return {output: state.output};
+  return {siteStatus: state.siteStatus};
 }
 
-export default connect(mapStateToProps,null)(Home);
+function mapDispatchToProps(dispatch) {
+
+  return bindActionCreators({ClickOpenSiteBars: ClickOpenSiteBars}, dispatch) 
+  
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(Home);

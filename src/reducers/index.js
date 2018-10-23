@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
-import outputReducer from './outputReducer';
+import MenuReducer from './menuReducer';
 
 
-const counterApp = combineReducers({
-  output: outputReducer
+const PortfolioApp = combineReducers({
+  siteStatus: MenuReducer
 })
 
-export default counterApp
+export default PortfolioApp
